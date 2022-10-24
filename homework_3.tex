@@ -100,22 +100,25 @@ Prove the Squeeze Theorem.
 
 \subsection*{Solution}
 
-Given some interval $I$, suppose that $\forall x \in I$, $x_0 \in I$, $f(x) \leq g(x) \leq h(x)$, $\lim_{x \to x_0} f(x) = L$, and $\lim_{x \to x_0} h(x) = L$.
-
-$\forall \epsilon > 0$, $\exists \delta_1, \delta_2$, $\abs{f(x) - L} < \epsilon$, $\abs{h(x) - L} < \epsilon$. Note that
+Given some interval $I$, suppose that $\forall x \in I$, $x_0 \in I$, $f(x) \leq g(x) \leq h(x)$, $\lim_{x \to x_0} f(x) = L$, and $\lim_{x \to x_0} h(x) = L$. $\forall \epsilon > 0$, $\exists \delta_1, \delta_2$, $\forall x : 0 < \abs{x - x_0} < \delta_1 \implies \abs{f(x) - L} < \epsilon$, $\forall x : 0 < \abs{x - x_0} < \delta_2 \implies \abs{h(x) - L} < \epsilon$. Note that $-\epsilon < f(x) - L < \epsilon$ and $-\epsilon < h(x) - L < \epsilon$. In particular,
 \begin{align*}
-    g(x) &\leq h(x) \\
-    g(x) - L &\leq h(x) - L \\
-    g(x) - L &\leq \epsilon
+    -\epsilon &< f(x) - L \\
+    L - \epsilon &< f(x)
 \end{align*}
-Likewise,
+and
 \begin{align*}
-    f(x) &\leq g(x) \\
-    f(x) - L &\leq g(x) - L \\
-    \epsilon &\leq g(x) - L \\
+    h(x) - L &< \epsilon \\
+    h(x) &< L + \epsilon
 \end{align*}
-Therefore, $g(x) - L = \epsilon$...
+With $\delta = \min(\delta_1, \delta_2)$, we have $\forall x : 0 < \abs{x - x_0} < \delta \implies L - \epsilon < f(x) < g(x) < h(x) < L + \epsilon$, so $-\epsilon < g(x) - L < \epsilon$ which means that $\abs{g(x) - L} < \epsilon$ and $\lim_{x \to x_0} g(x) = L$.
 
+
+
+\section*{2.4.17}
+
+\subsection*{Problem}
+
+\subsection*{Solution}
 
 
 \end{document}
