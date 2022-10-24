@@ -56,7 +56,13 @@ $\forall \epsilon > 0,\ \exists \delta = \epsilon,\ \forall x : 0 < \abs{x - x_0
 
 \subsection*{Problem}
 
+Prove the limit for $\lim_{x \to 2} \round{x^3 - 2x^2 + x - 7}$.
+
 \subsection*{Solution}
+
+The limit is $2^3 - 2 \times 2^2 + 2 - 7 = -5$.
+
+$\forall \epsilon > 0,\ \exists \delta = \min\round{1, \frac{\epsilon}{10}},\ \forall x : 0 < \abs{x - 2} < \delta,\ \\ \abs{x^3 - 2x^2 + x - 7 - (-5)} = \abs{x - 2} \times \abs{x^2 + 1} < 10 \abs{x - 2} < \epsilon$
 
 
 
