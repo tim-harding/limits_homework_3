@@ -84,7 +84,11 @@ $\forall \epsilon > 0,\ \exists \delta = \_\_\_\_,\ \forall x : 0 < \abs{x - x_0
 
 \subsection*{Problem}
 
+Prove that $\lim_{x \to x_0} f(x) = \infty \implies \nexists L \in \R : \lim_{x \to x_0} f(x) = L$.
+
 \subsection*{Solution}
+
+$\forall M > 0,\ \exists \delta,\ \forall x < \abs{x - x_0} < \delta,\ f(x) > M$. Suppose for the sake of contradiction that $\exists L : \forall \epsilon > 0,\ \exists \bar{\delta},\ \forall x : x < \abs{x - x_0} < \bar{\delta},\ \abs{f(x) - L} < \epsilon$. If we choose that $\epsilon = 1$ and $M = L + 2$, then $f(x) > L + 2$ and $\abs{f(x) - L} < 1$. However, this would imply that $f(x)$ and $L$ are simultaneously greater than 2 apart and less than 1 apart, a contradiction.
 
 
 
