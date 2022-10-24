@@ -96,10 +96,25 @@ $\forall M > 0,\ \exists \delta,\ \forall x < \abs{x - x_0} < \delta,\ f(x) > M$
 
 \subsection*{Problem}
 
+Prove the Squeeze Theorem.
+
 \subsection*{Solution}
 
+Given some interval $I$, suppose that $\forall x \in I$, $x_0 \in I$, $f(x) \leq g(x) \leq h(x)$, $\lim_{x \to x_0} f(x) = L$, and $\lim_{x \to x_0} h(x) = L$.
 
-
+$\forall \epsilon > 0$, $\exists \delta_1, \delta_2$, $\abs{f(x) - L} < \epsilon$, $\abs{h(x) - L} < \epsilon$. Note that
+\begin{align*}
+    g(x) &\leq h(x) \\
+    g(x) - L &\leq h(x) - L \\
+    g(x) - L &\leq \epsilon
+\end{align*}
+Likewise,
+\begin{align*}
+    f(x) &\leq g(x) \\
+    f(x) - L &\leq g(x) - L \\
+    \epsilon &\leq g(x) - L \\
+\end{align*}
+Therefore, $g(x) - L = \epsilon$...
 
 
 
