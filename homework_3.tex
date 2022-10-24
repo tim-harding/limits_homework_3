@@ -10,7 +10,6 @@
 \usepackage{graphicx}
 
 \graphicspath{ {./images/} }
-% \includegraphics{name}
 
 \newcommand{\curly}[1]{\left\{      #1 \right\}     }
 \newcommand{\round}[1]{\left(       #1 \right)      }
@@ -21,12 +20,22 @@
 \newcommand{\R}    [0]{\mathbb{R}                   }
 \newcommand{\Z}    [0]{\mathbb{Z}                   }
 
-\setlength{\parskip}{1em}
 \setlength{\parindent}{0in}
 
-\title{My Title}
+\title{Homework 3}
 \author{Tim Harding}
 
 \begin{document}
 \maketitle
+
+\section*{2.4.8}
+
+\subsection*{Problem}
+
+Prove that $\lim_{x \to x_0} x = x_0$.
+
+\subsection*{Solution}
+
+$\forall \epsilon > 0,\ \exists \delta = \epsilon,\ \forall x : 0 < \abs{x - x_0} < \delta,\ \abs{x - x_0} < \epsilon$
+
 \end{document}
