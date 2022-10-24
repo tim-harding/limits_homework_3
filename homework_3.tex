@@ -72,7 +72,11 @@ This can also be found using the sum and product laws.
 
 \subsection*{Problem}
 
+Show that given $\lim_{x \to x_0} f(x) = L$ and $\lim_{x \to x_0} f(x) = l$ we have $L = l$.
+
 \subsection*{Solution}
+
+$\forall \epsilon > 0,\ \exists \delta = \_\_\_\_,\ \forall x : 0 < \abs{x - x_0} < \delta,\ \abs{f(x) - L} < \epsilon,\ \abs{f(x) - l} < \epsilon,\ \\ L - l = \abs{L - l} = \abs{-f(x) + L + f(x) - l} = \abs{(f(x) - l) + -(f(x) - L)} \leq \\ \abs{f(x) - l)} + \abs{-(f(x) - L)} = \abs{f(x) - l} + \abs{f(x) - L} < 2\epsilon$. By choosing $\epsilon$ arbitrarily small, we find that the difference between $L$ and $l$ is arbitrarily small. Thus, $L$ and $l$ are arbitrarily close together, so $L = l$.
 
 
 
