@@ -118,7 +118,18 @@ With $\delta = \min(\delta_1, \delta_2)$, we have $\forall x : 0 < \abs{x - x_0}
 
 \subsection*{Problem}
 
+Prove that $\lim_{x \to x_0} f(x) = L$, $L \geq 0 \implies \lim_{x \to x_0} \sqrt{f(x)} = \sqrt{L}$.
+
 \subsection*{Solution}
+
+$\forall \epsilon > 0$, $\exists \delta$, $\forall x : 0 < \abs{x - x_0} < \delta$, $\abs{f(x) - L} < \epsilon$.
+
+\begin{align}
+    \abs{\sqrt{f(x)} - \sqrt{L}} \\
+    \abs{\round{\sqrt{f(x)} - \sqrt{L}} \frac{\sqrt{f(x)} + \sqrt{L}}{\sqrt{f(x)} + \sqrt{L}}} \\
+    \abs{\frac{f(x) - L}{\sqrt{f(x)} + \sqrt{L}}} \\
+    \abs{f(x) - L} \abs{\frac{1}{\sqrt{f(x)} + \sqrt{L}}}
+\end{align}
 
 
 \end{document}
