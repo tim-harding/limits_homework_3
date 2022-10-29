@@ -183,7 +183,22 @@ Find an explicit formula for the recursive relation
 
 \subsection*{Problem}
 
+Find an explicit formula for the recursive relation
+\begin{align*}
+    a_n = \begin{cases}
+        a_1 &= 1 \\
+        a_{n + 1} &= a_n + n + 1
+    \end{cases}
+\end{align*}
+
 \subsection*{Solution}
+
+\begin{align*}
+    \sum_{i = 1}^n a_i &= 1 + (a_1 + 1 + 1) + (a_2 + 2 + 1) + (a_3 + 3 + 1) + \cdots (a_{n - 1} + n - 1 + 1) \\
+    a_n &= \sum_{i = 1}^n 1 + \sum_{i = 1}^{n - 1} i \\
+    a_n &= n + \frac{(1 + (n - 1)) (n - 1)}{2} \\
+    a_n &= n + \frac{n(n - 1)}{2}
+\end{align*}
 
 
 
