@@ -161,7 +161,21 @@ $c_n = (-1)^n \times n^{-2}$. This is similar to $b_n$ in that it approaches 0 b
 
 \subsection*{Problem}
 
+Find an explicit formula for the recursive relation
+\begin{align*}
+    a_n = \begin{cases}
+        a_1 &= 0 \\
+        a_{n + 1} &= a_n - 1
+    \end{cases}
+\end{align*}
+
 \subsection*{Solution}
+
+\begin{align*}
+    \sum_{i = 1}^n a_i &= 0 + (a_1 - 1) + (a_2 - 1) + \cdots + (a_{n - 1} - 1) \\
+    a_n &= -1 \times (n - 1) \\
+    a_n &= 1 - n
+\end{align*}
 
 
 
