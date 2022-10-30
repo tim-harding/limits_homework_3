@@ -381,8 +381,12 @@ Investigate the convergence of $\floor{1 - \frac{1}{n}}$.
 \section*{3.2.11}
 
 \subsection*{Problem}
+Show that $\forall a \in \R : \abs{a} < 1 \implies \lim_{n \to \infty} a^n = 0$ and discuss the case $\abs{a} = 1$.
 
 \subsection*{Solution}
+$\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\log_a(\epsilon)}$, $\forall n \in \N : n > N$, $\abs{a^n - 0} < \epsilon$
+
+When $a = 1$, $\lim_{n \to \infty} 1^n = 1$. When $a = -1$, the function oscillates between 1 and -1 and never converges so the limit does not exist.
 
 
 
