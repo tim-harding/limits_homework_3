@@ -409,6 +409,12 @@ $\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{4 \epsilon
 Show that if a sequence is convergent then its limit is unique.
 
 \subsection*{Solution}
+Let the sequence have two values in the limit, $x$ and $y$, so that
+\begin{align*}
+    \lim_{n \to \infty} a_n &= x \\
+    \lim_{n \to \infty} a_n &= y
+\end{align*}
+ We have $\forall \epsilon \in \R : \epsilon > 0$, $\exists N_1, N_2 \in \R$, $\forall n \in \N : n > N_1 \implies \abs{a_n - x} < \epsilon$, $\forall n \in \N : n > N_2 \implies \abs{a_n - y} < \epsilon$. Also let $N = \max(N_1, N_2)$. Taking the difference of the limits, we have $\forall n \in \N : n > N \implies \abs{x - y} = \abs{x - y + a_n - a_n} \leq \abs{a_n - y} + \abs{x - a_n} = \abs{a_n - y} + \abs{a_n - x} < 2 \epsilon$. Since the difference between $x$ and $y$ can be made arbitrarily small, we know that $x = y$.
 
 
 
