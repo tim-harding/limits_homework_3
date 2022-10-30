@@ -217,7 +217,31 @@ We have a limit of the form $0 \times -\infty$, so we continue:
 \end{align*}
 
 \subsection*{Solution}
-
+We have the indeterminate form $0^0$, so we proceed as follows:
+\begin{align*}
+     & \lim_{x \to 0^+} \round{e^{\ln(x)}}^{\sin(x)} \\
+    =& \lim_{x \to 0^+} e^{\ln(x) \sin(x)} \\
+\end{align*}
+We calculate the limit of the exponent:
+\begin{align*}
+    \lim_{x \to 0^+} \ln(x) \sin(x) \\
+\end{align*}
+Which is of the form $-\infty \times 0$ so we apply L'Hopital's rule:
+\begin{align*}
+     & \lim_{x \to 0^+} \frac{\ln(x)}{\frac{1}{\sin(x)}} \\
+    =& \lim_{x \to 0^+} \frac{\frac{1}{x}}{-\frac{1}{\sin^2(x)} \cos(x)} \\
+    =& -\lim_{x \to 0^+} \frac{\sin^2(x)}{x\cos(x)} \\
+    =& -\lim_{x \to 0^+} \frac{2\sin(x) \cos(x)}{\cos(x) + x (-\sin(x))} \\
+    =& \frac{2 \sin(0) \cos(0)}{\cos(0) - 0 \sin(0)} \\
+    =& \frac{2 \times 0 \times 1}{1 - 0 \times 0} \\
+    =& 0
+\end{align*}
+This can now be substituted:
+\begin{align*}
+     & \lim_{x \to 0^+} e^{\ln(x) \sin(x)} \\
+    =& e^0 \\
+    =& 1
+\end{align*}
 
 
 
