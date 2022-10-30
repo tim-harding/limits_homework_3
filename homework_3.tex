@@ -393,14 +393,20 @@ When $a = 1$, $\lim_{n \to \infty} 1^n = 1$. When $a = -1$, the function oscilla
 \section*{3.2.12}
 
 \subsection*{Problem}
+Prove that
+\begin{align*}
+    \lim_{n \to \infty} \frac{n^2 + n}{2n^2 + 1} = \frac{1}{2}
+\end{align*}
 
 \subsection*{Solution}
+$\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{4 \epsilon}}$, $\forall n \in \N : n > N$, $\abs{\frac{n^2 + n}{2n^2 + 1} - \frac{1}{2}} = \abs{\frac{2(n^2 + n) - (2n^2 + 1)}{2(2n^2 + 1)}} = \frac{1}{2} \abs{\frac{n - 1}{2n^2 + 1}} < \frac{1}{2} \abs{\frac{n}{2n^2}} = \frac{1}{4} \abs{\frac{1}{n}} = \frac{1}{4n} < \epsilon$
 
 
 
 \section*{3.2.15}
 
 \subsection*{Problem}
+Show that if a sequence is convergent then its limit is unique.
 
 \subsection*{Solution}
 
@@ -409,6 +415,7 @@ When $a = 1$, $\lim_{n \to \infty} 1^n = 1$. When $a = -1$, the function oscilla
 \section*{3.2.17}
 
 \subsection*{Problem}
+Show that is $a_n$ is a convergent sequence then $a_{n + p}$ is also a convergent sequence.
 
 \subsection*{Solution}
 
