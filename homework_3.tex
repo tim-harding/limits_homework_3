@@ -125,12 +125,24 @@ Prove that $\lim_{x \to x_0} f(x) = L$, $L \geq 0 \implies \lim_{x \to x_0} \sqr
 
 $\forall \epsilon > 0$, $\exists \delta$, $\forall x : 0 < \abs{x - x_0} < \delta$, $\abs{f(x) - L} < \epsilon$.
 
-\begin{align}
+\begin{align*}
     \abs{\sqrt{f(x)} - \sqrt{L}} \\
     \abs{\round{\sqrt{f(x)} - \sqrt{L}} \frac{\sqrt{f(x)} + \sqrt{L}}{\sqrt{f(x)} + \sqrt{L}}} \\
     \abs{\frac{f(x) - L}{\sqrt{f(x)} + \sqrt{L}}} \\
     \abs{f(x) - L} \abs{\frac{1}{\sqrt{f(x)} + \sqrt{L}}}
-\end{align}
+\end{align*}
+
+
+
+\section*{2.4.B}
+
+\subsection*{Problem}
+
+State the $\frac{\infty}{0}$ type of quotient law for $x \to x_0^+$.
+
+\subsection*{Solution}
+
+Since 0 in the denominator pushes the $\infty$ in the numerator further from zero, we know the quotient will be arbitrarily large. Since we approach the limit from the right, the quotient is positive and $\frac{\infty}{0} = \infty$.
 
 
 
