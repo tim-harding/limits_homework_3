@@ -32,11 +32,9 @@
 \section*{2.4.8}
 
 \subsection*{Problem}
-
 Prove that $\lim_{x \to x_0} x = x_0$.
 
 \subsection*{Solution}
-
 $\forall \epsilon > 0,\ \exists \delta = \epsilon,\ \forall x : 0 < \abs{x - x_0} < \delta,\ \abs{x - x_0} < \epsilon$
 
 
@@ -44,11 +42,9 @@ $\forall \epsilon > 0,\ \exists \delta = \epsilon,\ \forall x : 0 < \abs{x - x_0
 \section*{2.4.9}
 
 \subsection*{Problem}
-
 Prove that if $x_0, k \in \R$ then $\lim_{x \to x_0} k = k$.
 
 \subsection*{Solution}
-
 $\forall \epsilon > 0,\ \exists \delta = \epsilon,\ \forall x : 0 < \abs{x - x_0} < \delta,\ \abs{k - k} = 0 < \epsilon$
 
 
@@ -56,11 +52,9 @@ $\forall \epsilon > 0,\ \exists \delta = \epsilon,\ \forall x : 0 < \abs{x - x_0
 \section*{2.4.10}
 
 \subsection*{Problem}
-
 Prove the limit for $\lim_{x \to 2} \round{x^3 - 2x^2 + x - 7}$.
 
 \subsection*{Solution}
-
 The limit is $2^3 - 2 \times 2^2 + 2 - 7 = -5$.
 
 $\forall \epsilon > 0,\ \exists \delta = \min\round{1, \frac{\epsilon}{10}},\ \forall x : 0 < \abs{x - 2} < \delta,\ \\ \abs{x^3 - 2x^2 + x - 7 - (-5)} = \abs{x - 2} \times \abs{x^2 + 1} < 10 \abs{x - 2} < \epsilon$
@@ -72,11 +66,9 @@ This can also be found using the sum and product laws.
 \section*{2.4.14}
 
 \subsection*{Problem}
-
 Show that given $\lim_{x \to x_0} f(x) = L$ and $\lim_{x \to x_0} f(x) = l$ we have $L = l$.
 
 \subsection*{Solution}
-
 $\forall \epsilon > 0,\ \exists \delta = \_\_\_\_,\ \forall x : 0 < \abs{x - x_0} < \delta,\ \abs{f(x) - L} < \epsilon,\ \abs{f(x) - l} < \epsilon,\ \\ L - l = \abs{L - l} = \abs{-f(x) + L + f(x) - l} = \abs{(f(x) - l) + -(f(x) - L)} \leq \\ \abs{f(x) - l)} + \abs{-(f(x) - L)} = \abs{f(x) - l} + \abs{f(x) - L} < 2\epsilon$. By choosing $\epsilon$ arbitrarily small, we find that the difference between $L$ and $l$ is arbitrarily small. Thus, $L$ and $l$ are arbitrarily close together, so $L = l$.
 
 
@@ -84,11 +76,9 @@ $\forall \epsilon > 0,\ \exists \delta = \_\_\_\_,\ \forall x : 0 < \abs{x - x_0
 \section*{2.4.15}
 
 \subsection*{Problem}
-
 Prove that $\lim_{x \to x_0} f(x) = \infty \implies \nexists L \in \R : \lim_{x \to x_0} f(x) = L$.
 
 \subsection*{Solution}
-
 $\forall M > 0,\ \exists \delta,\ \forall x < \abs{x - x_0} < \delta,\ f(x) > M$. Suppose for the sake of contradiction that $\exists L : \forall \epsilon > 0,\ \exists \bar{\delta},\ \forall x : x < \abs{x - x_0} < \bar{\delta},\ \abs{f(x) - L} < \epsilon$. If we choose that $\epsilon = 1$ and $M = L + 2$, then $f(x) > L + 2$ and $\abs{f(x) - L} < 1$. However, this would imply that $f(x)$ and $L$ are simultaneously greater than 2 apart and less than 1 apart, a contradiction.
 
 
@@ -96,11 +86,9 @@ $\forall M > 0,\ \exists \delta,\ \forall x < \abs{x - x_0} < \delta,\ f(x) > M$
 \section*{2.4.16}
 
 \subsection*{Problem}
-
 Prove the Squeeze Theorem.
 
 \subsection*{Solution}
-
 Given some interval $I$, suppose that $\forall x \in I$, $x_0 \in I$, $f(x) \leq g(x) \leq h(x)$, $\lim_{x \to x_0} f(x) = L$, and $\lim_{x \to x_0} h(x) = L$. $\forall \epsilon > 0$, $\exists \delta_1, \delta_2$, $\forall x : 0 < \abs{x - x_0} < \delta_1 \implies \abs{f(x) - L} < \epsilon$, $\forall x : 0 < \abs{x - x_0} < \delta_2 \implies \abs{h(x) - L} < \epsilon$. Note that $-\epsilon < f(x) - L < \epsilon$ and $-\epsilon < h(x) - L < \epsilon$. In particular,
 \begin{align*}
     -\epsilon &< f(x) - L \\
@@ -118,11 +106,9 @@ With $\delta = \min(\delta_1, \delta_2)$, we have $\forall x : 0 < \abs{x - x_0}
 \section*{2.4.17}
 
 \subsection*{Problem}
-
 Prove that $\lim_{x \to x_0} f(x) = L$, $L \geq 0 \implies \lim_{x \to x_0} \sqrt{f(x)} = \sqrt{L}$.
 
 \subsection*{Solution}
-
 $\forall \epsilon > 0$, $\exists \delta$, $\forall x : 0 < \abs{x - x_0} < \delta$, $\abs{f(x) - L} < \epsilon$.
 
 \begin{align*}
@@ -137,7 +123,6 @@ $\forall \epsilon > 0$, $\exists \delta$, $\forall x : 0 < \abs{x - x_0} < \delt
 \section*{2.4.B}
 
 \subsection*{Problem}
-
 State the $\frac{\infty}{0}$ type of quotient law for $x \to x_0^+$.
 
 \subsection*{Solution}
@@ -209,11 +194,9 @@ Since 0 in the denominator pushes the $\infty$ in the numerator further from zer
 \section*{3.1.6}
 
 \subsection*{Problem}
-
 Show the first 6 terms of $b_n = \frac{1}{n}$ and show two graphical representations.
 
 \subsection*{Solution}
-
 $1$, $\frac{1}{2}$, $\frac{1}{3}$, $\frac{1}{4}$, $\frac{1}{5}$, $\frac{1}{6}$.
 
 
@@ -221,11 +204,9 @@ $1$, $\frac{1}{2}$, $\frac{1}{3}$, $\frac{1}{4}$, $\frac{1}{5}$, $\frac{1}{6}$.
 \section*{3.1.8}
 
 \subsection*{Problem}
-
 Find a pattern in the sequence $-1$, $\frac{1}{4}$, $-\frac{1}{9}$, $\frac{1}{16}$, $-\frac{1}{25}$.
 
 \subsection*{Solution}
-
 $c_n = (-1)^n \times n^{-2}$. This is similar to $b_n$ in that it approaches 0 but different in that it does so more quickly while leaping back and forth over the asymptote at each step.
 
 
@@ -233,7 +214,6 @@ $c_n = (-1)^n \times n^{-2}$. This is similar to $b_n$ in that it approaches 0 b
 \section*{3.1.9}
 
 \subsection*{Problem}
-
 Find an explicit formula for the recursive relation
 \begin{align*}
     a_n = \begin{cases}
@@ -243,7 +223,6 @@ Find an explicit formula for the recursive relation
 \end{align*}
 
 \subsection*{Solution}
-
 \begin{align*}
     \sum_{i = 1}^n a_i &= 0 + (a_1 - 1) + (a_2 - 1) + \cdots + (a_{n - 1} - 1) \\
     a_n &= -1 \times (n - 1) \\
@@ -255,7 +234,6 @@ Find an explicit formula for the recursive relation
 \section*{3.1.10}
 
 \subsection*{Problem}
-
 Find an explicit formula for the recursive relation
 \begin{align*}
     a_n = \begin{cases}
@@ -265,7 +243,6 @@ Find an explicit formula for the recursive relation
 \end{align*}
 
 \subsection*{Solution}
-
 \begin{align*}
     \sum_{i = 1}^n a_i &= 1 + (a_1 + 1 + 1) + (a_2 + 2 + 1) + (a_3 + 3 + 1) + \cdots + (a_{n - 1} + n - 1 + 1) \\
     a_n &= \sum_{i = 1}^n 1 + \sum_{i = 1}^{n - 1} i \\
@@ -278,11 +255,9 @@ Find an explicit formula for the recursive relation
 \section*{3.2.8}
 
 \subsection*{Problem}
-
 Prove that the sequence $\frac{1}{2}$, $-\frac{1}{5}$, $\frac{1}{8}$, $-\frac{1}{11}$, $\frac{1}{14}$ converges to zero.
 
 \subsection*{Solution}
-
 We observe that the pattern, starting with $n = 0$, is
 \begin{align*}
     (-1)^n \frac{1}{2 + 3n}
@@ -296,11 +271,9 @@ $\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \ceil{\frac{1}{3 \epsilon
 \section*{3.2.9}
 
 \subsection*{Problem}
-
 If the sequence $\frac{\cos n}{n}$ converges, prove its limit.
 
 \subsection*{Solution}
-
 $\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \frac{1}{\epsilon}$, $\forall n \in \N : n > N$, $\abs{\frac{\cos n}{n} - 0} \leq \frac{1}{n} < \epsilon$
 
 
@@ -308,7 +281,6 @@ $\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \frac{1}{\epsilon}$, $\fo
 \section*{3.2.10}
 
 \subsection*{Problem}
-
 Investigate the convergence of $\floor{1 - \frac{1}{n}}$.
 
 \subsection*{Solution}
