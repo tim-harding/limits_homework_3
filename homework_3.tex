@@ -253,7 +253,32 @@ This can now be substituted:
 \end{align*}
 
 \subsection*{Solution}
-
+We begin with several substitutions:
+\begin{align*}
+       & \lim_{x \to 0^+} \round{e^{\ln(x)}}^{x^x} \\
+    =\ & \lim_{x \to 0^+} e^{x^x \ln(x)}
+\end{align*}
+We evaluate the exponent:
+\begin{align*}
+       & \lim_{x \to 0^+} x^x \ln(x) \\
+    =\ & \lim_{x \to 0^+} \round{e^{\ln(x)}}^x \ln(x) \\
+    =\ & \lim_{x \to 0^+} e^{x\ln(x)} \ln(x) \\
+\end{align*}
+Evaluating the exponent again:
+\begin{align*}
+       & \lim_{x \to 0^+} x \ln(x) \\
+    =\ & \lim_{x \to 0^+} \frac{\ln(x)}{\frac{1}{x}} \\
+    =\ & \lim_{x \to 0^+} \frac{\frac{1}{x}}{-\frac{1}{x^2}} \\
+    =\ & -\lim_{x \to 0^+} x \\
+    =\ & 0
+\end{align*}
+So the form of the previous limit is $1 \times -\infty$, which is a determined form. We have \\$\lim_{x \to 0^+} e^{x \ln(x)} \ln(x) = e^0 \ln(0) = -\infty$.
+We can substitute again in the first limit and find
+\begin{align*}
+       & \lim_{x \to 0^+} e^{x^x \ln(x)} \\
+    =\ & e^{-\infty} \\
+    =\ & 0
+\end{align*}
 
 
 
