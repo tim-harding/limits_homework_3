@@ -185,7 +185,27 @@ We apply L'Hopital's rule:
 \end{align*}
 
 \subsection*{Solution}
-
+We rewrite as a quotient:
+\begin{align*}
+    \lim_{x \to 0^+} \frac{(\ln(x))^2}{\frac{1}{x}}
+\end{align*}
+This limit is of the form
+\begin{align*}
+    \frac{(\ln(0))^2}{\frac{1}{0}} = \frac{(-\infty)^2}{\infty} = \frac{\infty}{\infty}
+\end{align*}
+We apply L'Hopital's rule:
+\begin{align*}
+     & \lim_{x \to 0^+} \frac{2 \ln(x) \frac{1}{x}}{-\frac{1}{x^2}} \\
+    =& -2 \lim_{x \to 0^+} x \ln(x)
+\end{align*}
+We have a limit of the form $0 \times -\infty$, so we continue:
+\begin{align*}
+       & -2 \lim_{x \to 0^+} \frac{\ln(x)}{\frac{1}{x}} \\
+    =\ & -2 \lim_{x \to 0^+} \frac{\frac{1}{x}}{-\frac{1}{x^2}} \\
+    =\ & 2 \lim_{x \to 0^+} x \\
+    =\ & 2 \times 0 \\
+    =\ & 0
+\end{align*}
 
 
 
