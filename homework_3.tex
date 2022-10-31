@@ -346,13 +346,28 @@ Find an explicit formula for the recursive relation
 \section*{3.1.A}
 
 \subsection*{Problem}
-If $a_1 = 8$ and $a_{n+1} = \frac{1}{2} a_{n}$ for $n \in \N^+$, find a general formula for $a_n$.
+If $a_1 = 8$ and $a_{n+1} = \frac{1}{2} a_{n}$ for $n \in \N^+$, find the general formula for $a_n$.
 
 \subsection*{Solution}
 \begin{align*}
     \prod_{i = 1}^n a_i &= 8 \round{\frac{1}{2} a_1} \round{\frac{1}{2} a_2} \cdots \round{\frac{1}{2} a_{n - 1}} \\
     a_n &= 8 \round{\frac{1}{2}}^{n-1} \\
     a_n &= \frac{16}{2^n} \\
+\end{align*}
+
+
+
+\section*{3.1.B}
+
+\subsection*{Problem}
+If $b_1 = 1$ and $b_{n+1} = \frac{b_n}{n+1}$ for $n \in \N^+$, find the general formula for $b_n$.
+
+\subsection*{Solution}
+\begin{align*}
+    \prod_{i = 1}^n b_i &= 1 \round{\frac{b_1}{1 + 1}} \round{\frac{b_2}{2 + 1}} \cdots \round{\frac{b_{n - 1}}{n + 1}} \\
+    b_n &= \frac{1}{\prod_{i = 1}^n (i + 1)} \\
+    b_n &= \frac{1}{n \prod_{i = 1}^n i} \\
+    b_n &= \frac{1}{n \times n!} \\
 \end{align*}
 
 
