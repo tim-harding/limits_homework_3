@@ -457,4 +457,25 @@ Since $a_n$ is convergent to some $l \in \R$, we have $\forall \epsilon \in \R :
 
 
 
+\section*{3.2.A}
+
+\subsection*{Problem}
+Prove that $\frac{1}{n}$ is Cauchy. Specifically, when we need to get $\abs{\frac{1}{m} - \frac{1}{n}} < \epsilon$, try to estimate as $\abs{\frac{1}{m} - \frac{1}{n}} < \frac{1}{m}$ and show why this would work as long as we assume $m < n$ without loss of generality.
+
+\subsection*{Solution}
+First, we note that
+$\forall \epsilon \in \R : \epsilon > 0$, $\exists N = \frac{1}{\epsilon}$, $\forall n \in \N : n > N$, $\abs{\frac{1}{n} - 0} = \frac{1}{n} < \epsilon$.
+Next, we must demonstrate that the difference between terms becomes arbitrarily small. When $n < m$, we have
+\begin{align*}
+    \abs{\frac{1}{m} - \frac{1}{n}} &< \epsilon \\
+    \abs{\frac{1}{m} - \frac{1}{n}} &< \frac{1}{n} < \epsilon \\
+    \abs{\frac{n - m}{nm}} &< \frac{m}{nm} \\
+    \abs{n - m} &< m \\
+    \abs{m - n} &< m \\
+    m - n &< m
+\end{align*}
+Which is true. When $m < n$,
+
+
+
 \end{document}
